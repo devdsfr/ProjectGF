@@ -1,12 +1,12 @@
 package fundamentos
 
-class Pessoa(var nome:String, var idade: Int) {
+class Pessoa(var nome: String, var idade: Int){
     override fun toString(): String {
-        return "Classe: Pessoa, Nome: ${nome}, Idade: ${idade}"
+        return "classe: Pessoa. Nome: ${nome}, idade: ${idade}"
     }
 }
 
 fun main(){
-    var gustavo = Pessoa(nome = "Gustavo", idade = 24)
-    println(gustavo)
+    var daniel = Pessoa("Daniel", 30)
+    println(daniel)
 }
