@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GfModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="gratificacaoFiscalTipoLiberacao">
+    <Key>
+      <PropertyRef Name="num_tipo_liberacao" />
+    </Key>
+    <Property Name="num_tipo_liberacao" Type="Int32" Nullable="false" />
+    <Property Name="desc_tipo_liberacao" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="data_inicio" Type="DateTime" Precision="0" />
+    <Property Name="data_fim" Type="DateTime" Precision="0" />
+    <Property Name="data_atualizacao" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="servidor">
+    <Key>
+      <PropertyRef Name="num_servidor" />
+    </Key>
+    <Property Name="num_servidor" Type="Int32" Nullable="false" />
+    <Property Name="nome_servidor" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="num_processo" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="GfEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="gratificacaoFiscalTipoLiberacao" EntityType="Self.gratificacaoFiscalTipoLiberacao" />
+    <EntitySet Name="servidor" EntityType="Self.servidor" />
+    <EntitySet Name="gratificacaoFiscalAtoLiberacaoProcesso" EntityType="GfModel.gratificacaoFiscalAtoLiberacaoProcesso" />
+  </EntityContainer>
+  <EntityType Name="gratificacaoFiscalAtoLiberacaoProcesso">
+    <Key>
+      <PropertyRef Name="num_ato_liberacao" />
+    </Key>
+    <Property Name="num_ato_liberacao" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="desc_ato_liberacao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="data_inicio" Type="DateTime" Precision="0" />
+    <Property Name="data_fim" Type="DateTime" Precision="0" />
+    <Property Name="tipo_liberacao" Type="Int32" />
+    <Property Name="data_atualizacao" Type="DateTime" Precision="0" />
+  </EntityType>
+</Schema>

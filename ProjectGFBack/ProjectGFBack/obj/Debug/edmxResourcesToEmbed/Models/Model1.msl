@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GfModelStoreContainer" CdmEntityContainer="GfEntities1">
+    <EntitySetMapping Name="gratificacaoFiscalTipoLiberacao">
+      <EntityTypeMapping TypeName="GfModel.gratificacaoFiscalTipoLiberacao">
+        <MappingFragment StoreEntitySet="gratificacaoFiscalTipoLiberacao">
+          <ScalarProperty Name="num_tipo_liberacao" ColumnName="num_tipo_liberacao" />
+          <ScalarProperty Name="desc_tipo_liberacao" ColumnName="desc_tipo_liberacao" />
+          <ScalarProperty Name="data_inicio" ColumnName="data_inicio" />
+          <ScalarProperty Name="data_fim" ColumnName="data_fim" />
+          <ScalarProperty Name="data_atualizacao" ColumnName="data_atualizacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="servidor">
+      <EntityTypeMapping TypeName="GfModel.servidor">
+        <MappingFragment StoreEntitySet="servidor">
+          <ScalarProperty Name="num_servidor" ColumnName="num_servidor" />
+          <ScalarProperty Name="nome_servidor" ColumnName="nome_servidor" />
+          <ScalarProperty Name="num_processo" ColumnName="num_processo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="gratificacaoFiscalAtoLiberacaoProcesso">
+      <EntityTypeMapping TypeName="GfModel.gratificacaoFiscalAtoLiberacaoProcesso">
+        <MappingFragment StoreEntitySet="gratificacaoFiscalAtoLiberacaoProcesso">
+          <ScalarProperty Name="data_atualizacao" ColumnName="data_atualizacao" />
+          <ScalarProperty Name="tipo_liberacao" ColumnName="tipo_liberacao" />
+          <ScalarProperty Name="data_fim" ColumnName="data_fim" />
+          <ScalarProperty Name="data_inicio" ColumnName="data_inicio" />
+          <ScalarProperty Name="desc_ato_liberacao" ColumnName="desc_ato_liberacao" />
+          <ScalarProperty Name="num_ato_liberacao" ColumnName="num_ato_liberacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
