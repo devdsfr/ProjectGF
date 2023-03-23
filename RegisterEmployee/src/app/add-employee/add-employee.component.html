@@ -1,0 +1,20 @@
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <form (ngSubmit)="onSubmit()" #employeeForm="ngForm" class="form-futuristic p-4">
+    <h2 class="text-center text-white mb-4">Adicionar Funcionário</h2>
+    <div class="form-group mb-3">
+      <input type="text" class="form-control form-control-futuristic" id="name" name="name" placeholder="Nome" [(ngModel)]="employee.FullName" required>
+    </div>
+    <div class="form-group mb-3">
+      <input type="text" class="form-control form-control-futuristic" id="empcode" name="empcode" placeholder="Código do Funcionário" [(ngModel)]="employee.EMPCode" required>
+    </div>
+    <div class="form-group mb-3">
+      <input type="text" class="form-control form-control-futuristic" id="mobile" name="mobile" placeholder="Telefone" [(ngModel)]="employee.Mobile" required>
+    </div>
+    <div class="form-group mb-3">
+      <input type="text" class="form-control form-control-futuristic" id="position" name="position" placeholder="Cargo" [(ngModel)]="employee.Position" required>
+    </div>
+    <div class="form-group mt-4">
+      <button type="submit" class="btn btn-primary btn-futuristic" [disabled]="!employeeForm.valid">Adicionar Funcionário</button>
+    </div>
+  </form>
+</div>

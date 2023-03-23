@@ -290,3 +290,6 @@ C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\o
 C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\obj\Debug\ProjectGFBack.csproj.CopyComplete
 C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\obj\Debug\ProjectGFBack.dll
 C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\obj\Debug\ProjectGFBack.pdb
+C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\bin\System.Web.Cors.dll
+C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\bin\System.Web.Http.Cors.dll
+C:\Users\Elite Player\Documents\Projetos\ProjectGF\ProjectGFBack\ProjectGFBack\bin\System.Web.Http.Cors.xml

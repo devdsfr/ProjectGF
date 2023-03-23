@@ -1,0 +1,36 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #3f3f3f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #585858;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.nav-button i {
+  margin-right: 10px;
+}
+
+.nav-button span {
+  font-weight: bold;
+}
